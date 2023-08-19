@@ -1,0 +1,264 @@
+/** @format */
+
+/************** regular mobile size ***************/
+
+
+@media only screen and (max-width: 1010px) and (min-width: 281px) {
+
+
+    p{
+
+        font-size: 3vw;
+    }
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .pic {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .grid-container {
+    min-height: 600px;
+    height: 100%;
+    max-height: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+ 
+
+  /* ***********carousel ****************/
+
+  
+
+  .slide{
+
+    height: auto;
+
+  }
+
+ .skills{
+
+    margin: 50px auto 50px auto;
+ }
+
+ .skill-row{
+
+    width: auto;
+
+ }
+
+ .text > article {
+    text-align: center;
+  }
+
+.slide > article {
+
+    justify-content: center;
+}
+
+.car-img{
+
+    max-height: 200px;
+
+}
+
+.carousel-wrapper{
+
+    margin: 0.5rem;
+}
+
+.project-description{
+
+    margin:10%;
+
+
+
+}
+
+  /* ***********carousel ****************/
+}
+
+/************** extra narrow mobile size ***************/
+
+@media only screen and (max-width: 280px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+
+   p {
+
+       font-size: 3vw;
+   }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  .grid-container {
+    min-height: 600px;
+    height: 100%;
+  }
+
+  hr {
+
+    display: none;
+  }
+
+ 
+  /* ***********carousel ****************/
+
+
+.slide {
+
+    height: auto;
+
+}
+
+.skills {
+
+    margin: 50px auto 50px auto;
+}
+
+.skill-row {
+
+    width: auto;
+
+}
+
+.text>article {
+    text-align: center;
+}
+
+.slide>article {
+
+    justify-content: center;
+}
+
+.car-img {
+
+    max-height: 200px;
+
+}
+
+.carousel-wrapper {
+
+    margin: 0.5rem;
+}
+
+.project-description {
+
+    margin: 10%;
+
+
+}
+
+
+  /* ***********carousel ****************/
+
+  .footer{
+
+
+    font-size: 3vw;
+  }
+}
+
+
+/************** wide and short size ***************/
+
+@media only screen and (max-width: 1010px) and (min-width: 281px) {
+
+
+    p {
+
+        font-size: 3vw;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .pic {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .grid-container {
+        min-height: 600px;
+        height: 100%;
+        max-height: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+
+
+    /* ***********carousel ****************/
+
+
+
+    .slide {
+
+        height: auto;
+
+    }
+
+    .skills {
+
+        margin: 50px auto 50px auto;
+    }
+
+    .skill-row {
+
+        width: auto;
+
+    }
+
+    .text>article {
+        text-align: center;
+    }
+
+    .slide>article {
+
+        justify-content: center;
+    }
+
+    .car-img {
+
+        max-height: 200px;
+
+    }
+
+    .carousel-wrapper {
+
+        margin: 0.5rem;
+    }
+
+    .project-description {
+
+        margin: 10%;
+
+
+
+    }
+
+    /* ***********carousel ****************/
+}

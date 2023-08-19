@@ -1,0 +1,651 @@
+/**************************Tag Selectors*******************/
+
+body {
+
+ background-color:  #ffe1e170;
+ margin:0px;
+ text-align: center;
+ font-family: 'Merriweather', serif;
+ display: flex;
+ flex-direction: column;
+
+
+}
+
+/***************** Color Animation **************************/
+
+.blue-sky {
+    background: linear-gradient(270deg, #f6f9e7, #d3e4f9, #b0edf9);
+    background-size:150% 150%;
+
+    -webkit-animation: pinkskies 30s ease infinite;
+    -moz-animation: pinkskies 30s ease infinite;
+    animation: pinkskies 30s ease infinite;
+}
+
+@-webkit-keyframes pinkskies {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes pinkskies {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes pinkskies {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* ******************************************************** */
+h1 {
+
+    margin-top: 0px;
+    padding: 0px;
+    font-family:'Dancing Script', cursive;
+    font-size: 6.5rem;
+    display:inline-block;
+    color: #cdb4db;
+    line-height: 1.1;
+    
+
+}
+
+h2 {
+
+    color: rgb(255, 253, 253);
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+
+    color: #cdb4db;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h3 {
+
+    color: #cdb4db;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    
+color: #fbfbfb;
+font-family: 'Montserrat', sans-serif;
+
+
+}
+
+img {
+    width: fit-content;
+
+}
+
+hr {
+
+    color:  #fafafaab;
+    border-style: none none dotted none;
+    width: 3%;
+    border-bottom-width: 10px;
+    margin:0px auto 100px auto;
+    
+}
+
+
+
+/**************************Class Selectors*******************/
+
+.hello {
+
+    margin-bottom:50px;
+
+}
+
+.subtitle {
+
+    font-size: 1.5em;
+    color: #cdb4db;
+
+}
+
+.text {
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+flex-grow: 1;
+text-align:center;
+text-emphasis:inherit;
+}
+
+.text > article {
+
+text-align: start;
+
+}
+
+.grid-container{
+
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+min-height: 600px;
+max-height: 750px;
+
+
+}
+
+
+.div0 {
+
+    /* background-color:#FFE1E1; */
+    height: 30%;
+    size: auto;
+
+
+
+}
+.cloud {
+
+    position: relative;
+    right: 5%;
+    margin-bottom: -18%;
+    display: inline-block;
+
+}
+
+.cloud1 {
+
+    position: relative;
+    left: 8%;
+    margin-bottom: 9%;
+    display: inline-block;
+
+}
+
+.lottie-container1, .lottie-container5 {
+
+width: 50%;
+
+}
+
+.lottie-container{
+
+grid-column: span 2;
+width: 70%;
+position: relative;
+    animation-name: cloud;
+    
+    animation-duration:3s;
+    animation-iteration-count:1;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+
+ transition: top 0.3s ease;
+
+}
+
+.cloud-click{
+
+transition: top 2s ease-in-out;
+
+}
+
+.cloud-click:hover {
+
+    position: relative;
+    top: 10px;
+    
+
+
+}
+
+
+
+@keyframes cloud {
+
+    from {
+        left: -50px;
+    }
+
+    to {
+        left: 0px;
+    }
+
+
+}
+
+
+
+
+
+
+.lottie-container2 {
+
+    width: 30%;
+
+}
+
+.lottie-container4{
+
+    grid-area: 3/2/3/2;
+    width:100%;
+
+    animation-name: cloud4;
+    animation-delay:1s;
+    animation-duration: 2.5s;
+    position: relative;
+    animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        animation-direction: alternate;
+    
+}
+
+@keyframes cloud4 {
+
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+
+
+}
+
+.lottie-container3{
+
+grid-area: 2/5/3/5;
+width: 100%;
+animation-name: cloud3;
+animation-delay: 1s;
+    animation-duration: 2.5s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes cloud3 {
+
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -30%;
+    }
+
+
+}
+
+
+
+
+.lottie-container6{
+
+
+grid-area: 3/3/3/3;
+width:100%;
+
+}
+
+.intro {
+
+    grid-area: 2/2/5/5;
+
+}
+
+
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15%;
+    margin: 100px auto 60px auto;
+    gap: 10px;
+}
+
+.pic {
+
+    border-radius: 10px;
+    width: 350px;
+    /* height: 200px; */
+    margin-right:0px;
+    object-fit: cover;
+    border-style: double;
+    border-color: white;
+
+}
+
+.skills {
+
+    margin: 50px auto 100px auto;
+    padding-bottom:100px;
+   
+
+}
+
+
+
+
+.skill-row {
+
+    width: 80%;
+    margin: 10px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.titles_skills {
+
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-row1 {
+
+    width: 50%;
+    margin: 100px auto 100px auto;
+
+    
+}
+
+.pic1{
+
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-left:30px; 
+    float:right;
+    
+
+
+}
+
+.titles_skills1 {
+
+    text-align: right;
+    line-height: 2;
+
+}
+
+.pic2 {
+
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin-right:30px;
+    object-fit: fill;
+
+}
+
+
+
+.btn {
+
+    padding: 10px 10px;
+    background-image: linear-gradient(#f2cad906,#cdb4db);
+    color: #f5f2f3;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    top: 35%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    
+
+
+}
+
+.btn:hover {
+
+    background-image: linear-gradient(#f2cad9bf,#cdb4db);
+    
+}
+
+.bottom-container {
+   
+    margin-bottom:0px;
+    padding:50px;
+    
+}
+
+.footer-link {
+
+    margin: 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    
+    color: white;
+        
+}
+
+.author-rights {
+
+    color: white;
+    margin-top: 50px;
+}
+/**************************Carousel*******************/
+
+.carousel-wrapper {
+    height: auto;
+    width: auto;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slide {
+    width: 50rem;
+    height: 45rem;
+    min-height: 20rem;
+    flex: 1 0 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.car-img {
+
+width: 85%;
+height: 80%;
+object-fit:contain;
+margin: 2px;
+
+}
+
+.slide > article {
+
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: linear-gradient(rgba(255, 0, 0, 0),rgba(255, 0, 0, 0),rgba(255, 0, 0, 0),rgba(255, 0, 0, 0), #c8d3e576);
+
+
+}
+
+
+
+
+.carousel-wrapper :nth-child(2) {
+   
+order: 1;
+
+
+}
+
+
+.carousel-wrapper > button {
+
+
+height: 3rem;
+width: 3rem;
+border-radius: 100%;
+margin: 10px;
+align-self: center;
+
+ background-color: #e0e7ea37;
+ color: #fffdfd;
+ font-size: 3rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+
+
+}
+
+.carousel-wrapper > button:active {
+    background-color: #c8d3e576;
+    border-style: none;
+    
+   
+    
+}
+
+.project-description {
+
+    /* background-color: #b7babd31; */
+    
+    height: 20%;
+    width: 85%;
+    order: 1;
+    font-size: auto;
+    font-weight: bold;
+
+}
+
+
+
+/****************** scroll ****************************/
+
+.scroll{
+
+   scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-padding: 0px;
+    height: 100vh;
+    
+    
+
+}
+
+.scroll-section{
+
+    scroll-snap-align: center;
+    height: 100vh;
+    scroll-margin: 200px;
+
+    
+}
+
+/****************** Contact Me ****************************/
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 10%;
+
+}
+
+.contact-me {
+
+    margin-bottom: 100px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-me > p {
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 50%;
+justify-content: center;
+align-items: center;
+
+
+
+}
