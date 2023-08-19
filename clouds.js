@@ -1,16 +1,16 @@
 
 const playClouds = () => {
-  const cloud1 = new Lottie(".lottie-container", "/photos/cloud.json");
+  const cloud1 = new Lottie(".lottie-container", "photos/cloud.json");
 
-  const cloud2 = new Lottie(".lottie-container1", "/photos/cloud.json");
+  const cloud2 = new Lottie(".lottie-container1", "photos/cloud.json");
 
-  const cloud3 = new Lottie(".lottie-container2", "/photos/cloud.json");
+  const cloud3 = new Lottie(".lottie-container2", "photos/cloud.json");
 
-  const cloud4 = new Lottie(".lottie-container3", "/photos/cloud.json");
+  const cloud4 = new Lottie(".lottie-container3", "photos/cloud.json");
 
-  const cloud5 = new Lottie(".lottie-container4", "/photos/cloud.json");
+  const cloud5 = new Lottie(".lottie-container4", "photos/cloud.json");
 
-  const cloud6 = new Lottie(".lottie-container5", "/photos/cloud.json");
+  const cloud6 = new Lottie(".lottie-container5", "photos/cloud.json");
 
   cloud1.startAnimation(500);
 
@@ -27,7 +27,7 @@ const playClouds = () => {
 
 
 const playArrow = () => {
-const arrow = new Lottie(".lottie-container6", "/photos/arrow.json");
+const arrow = new Lottie(".lottie-container6", "photos/arrow.json");
 
 arrow.startAnimation(3800);
 
