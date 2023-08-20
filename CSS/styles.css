@@ -513,6 +513,11 @@ width:100%;
     
 }
 
+.projects-mobile {
+
+    display: none;
+}
+
 
 
 .car-img {

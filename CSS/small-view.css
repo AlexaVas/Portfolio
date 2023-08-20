@@ -37,7 +37,12 @@
 
   /* ***********carousel ****************/
 
-  
+  .car-scroll, .skills {
+
+    display: none;
+
+
+  }
 
   .slide{
 
@@ -67,8 +72,12 @@
 
 .car-img{
 
-    max-height: 200px;
-
+    max-height: 300px;
+        width: 100%;
+          height: 80%;
+          object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px;
 }
 
 .carousel-wrapper{
@@ -85,6 +94,43 @@
 }
 
   /* ***********carousel ****************/
+
+ .projects-mobile{
+
+ display: block;
+
+
+ }
+
+ .project-mobile{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30% 5%;;
+
+ }
+.project-mobile > article {
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+    border-style: solid;
+      border-radius: 10px;
+      border-color: white;
+
+
+
+}
+
+
+ul{
+
+  padding-left: 0px;
+}
+
+
 }
 
 /************** extra narrow mobile size ***************/
@@ -177,88 +223,3 @@
 
 
 /************** wide and short size ***************/
-
-@media only screen and (max-width: 1010px) and (min-width: 281px) {
-
-
-    p {
-
-        font-size: 3vw;
-    }
-
-    .subtitle {
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    .pic {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .grid-container {
-        min-height: 600px;
-        height: 100%;
-        max-height: none;
-    }
-
-    hr {
-        display: none;
-    }
-
-
-
-    /* ***********carousel ****************/
-
-
-
-    .slide {
-
-        height: auto;
-
-    }
-
-    .skills {
-
-        margin: 50px auto 50px auto;
-    }
-
-    .skill-row {
-
-        width: auto;
-
-    }
-
-    .text>article {
-        text-align: center;
-    }
-
-    .slide>article {
-
-        justify-content: center;
-    }
-
-    .car-img {
-
-        max-height: 200px;
-
-    }
-
-    .carousel-wrapper {
-
-        margin: 0.5rem;
-    }
-
-    .project-description {
-
-        margin: 10%;
-
-
-
-    }
-
-    /* ***********carousel ****************/
-}
