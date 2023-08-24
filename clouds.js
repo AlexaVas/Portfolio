@@ -12,6 +12,8 @@ const playClouds = () => {
 
   const cloud6 = new Lottie(".lottie-container5", "photos/cloud.json");
 
+
+
   cloud1.startAnimation(500);
 
   cloud2.startAnimation(2000);
@@ -153,6 +155,21 @@ class CloudGame {
   }
 
   start() {
+
+    const gameIntro = this.clouds[0];
+    const text = document.createElement("p");
+    text.innerHTML = "click me!";
+    text.style.position = "relative";
+    text.style.fontSize = "1vw";
+    text.style.top = "60%";
+    text.style.left = "2%";
+    text.style.zIndex = "1";
+    text.style.color = "lightblue";
+
+
+
+    gameIntro.appendChild(text);
+
     this.clouds.forEach((cloud) => {
       console.log("hey");
 
