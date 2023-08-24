@@ -140,3 +140,53 @@ const startCarousel = () => {
     carousel.scrollLeft -= width;
   });
 };
+
+class CloudGame {
+  constructor() {
+    this.clouds = document.querySelectorAll(".cloud-click");
+
+    console.log(this.clouds);
+
+    this.value = this.clouds.length;
+
+    console.log(this.value);
+  }
+
+  start() {
+    this.clouds.forEach((cloud) => {
+      console.log("hey");
+
+      cloud.addEventListener("click", (e) => {
+        cloud.style.visibility = "hidden";
+        this.value -= 1;
+        console.log("remaining clouds" + this.value);
+        console.log("gone");
+
+        if (this.value === 0) {
+          console.log("blue skies!");
+          const div = document.querySelector(".grid-container");
+          const sun = document.createElement("div");
+
+          sun.style.width = "50%";
+          sun.style.height = "100%";
+          sun.style.position = "relative";
+          sun.classList.add("sun");
+          sun.classList.add("game");
+
+          div.appendChild(sun);
+
+          const sunLottie = new Lottie(".sun", "photos/sun.json");
+          sunLottie.startAnimation(2000);
+
+          sun.addEventListener("click", (e) => {
+            location.reload();
+          });
+        }
+      });
+    });
+  }
+}
+
+
+
+           

@@ -654,3 +654,112 @@ align-items: center;
 
 
 }
+
+
+/************ cloud game *******/
+
+.game{
+
+    animation-name: sun;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        position: relative;
+        animation-timing-function:ease-in;
+        animation-fill-mode:forwards;
+        animation-direction:normal;
+    
+}
+
+@keyframes sun {
+
+    0% {
+            
+            right: 0%;
+            bottom: 5%;
+        }
+
+
+     5% {
+        
+        right: 30%;
+        bottom: 20%;
+     }
+    
+        8% {
+            
+            right: 60%;
+            bottom: 20%;
+        }
+
+        10% {
+        
+         right: 90%;
+         bottom: 15%;
+        }
+    
+        20% {
+           
+            right: 120%;
+            bottom: 10%;
+        }
+
+       30% {
+        
+           right: 150%;
+           bottom: 5%;
+       }
+    
+        40% {
+            
+            right: 180%;
+            bottom: 0%;
+        }
+
+        50% {
+        
+             right: 210%;
+             bottom: 5%;
+
+        }
+        
+        60% {
+        
+            right: 240%;
+            bottom: 10%;
+        
+        }
+
+        70% {
+        
+            right: 270%;
+            bottom: 15%;
+                    
+          }
+
+        80% {
+                                        
+            right: 300%;
+            bottom: 10%;
+                                                                            
+        }
+
+        90% {
+        
+            right: 330%;
+            bottom: 5%;
+        }
+
+
+    
+        100% {
+            
+            right: 350%;
+            bottom: 0%;
+            width: 100%;
+            
+        }
+
+
+}
+
+/* *************************** */
