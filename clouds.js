@@ -165,10 +165,25 @@ class CloudGame {
     text.style.left = "2%";
     text.style.zIndex = "1";
     text.style.color = "lightblue";
-
-
-
     gameIntro.appendChild(text);
+
+
+
+         ///////////// ///count///////////////////
+        const count = document.createElement("div");
+          
+
+          const body = document.querySelector(".grid-container");
+
+          const countText = document.createElement("h3");
+
+          count.appendChild(countText);
+          
+          body.appendChild(count);
+        ////////////////////////////////////////
+
+
+
 
     this.clouds.forEach((cloud) => {
       console.log("hey");
@@ -179,8 +194,19 @@ class CloudGame {
         console.log("remaining clouds" + this.value);
         console.log("gone");
 
+
+
+        if (this.value < 5 && this.value > 0) {
+
+          count.classList.add("count");
+          countText.innerHTML = `${this.value}/5`;
+
+
+        }
+
         if (this.value === 0) {
           console.log("blue skies!");
+          count.remove();
           const div = document.querySelector(".grid-container");
           const sun = document.createElement("div");
 
