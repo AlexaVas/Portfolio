@@ -231,11 +231,14 @@ class CloudGame {
 }
 
 const letMeKnow = () => {
-  fetch("https://mail-server-5cbw.vercel.app/portfolio", { method: "POST" })
+  fetch("https://mail-server-5cbw.vercel.app/portfolio", {
+    method: "POST",
+    timeout: 10000,
+  })
     .then((res) => {
       console.log("Thanks for visiting my profile! :)");
     })
-    .catch((err) => console.log("Oh well...", err.status));
+    .catch((err) => console.log("Oh well..." ));
 };
 
 
