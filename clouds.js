@@ -235,7 +235,7 @@ const letMeKnow = () => {
     .then((res) => {
       console.log("Thanks for visiting my profile! :)");
     })
-    .catch((err) => console.log("Oh well..."));
+    .catch((err) => console.log("Oh well...", err.status));
 };
 
 
