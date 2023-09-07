@@ -231,7 +231,7 @@ class CloudGame {
 }
 
 const letMeKnow = () => {
-  fetch("http://localhost:5005/portfolio", { method: "POST" })
+  fetch("https://mail-server-5cbw.vercel.app/portfolio", { method: "POST" })
     .then((res) => {
       console.log("Thanks for visiting my profile! :)");
     })
