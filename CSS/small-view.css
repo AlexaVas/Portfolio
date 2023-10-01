@@ -3,7 +3,7 @@
 /************** regular mobile size ***************/
 
 
-@media only screen and (max-width: 1010px) and (min-width: 281px) {
+@media only screen and (max-width: 900px) and (min-width: 281px) {
 
 
     p{
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 30% 5%;;
+  padding: 10% 5%;;
 
  }
 .project-mobile > article {
