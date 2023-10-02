@@ -10,7 +10,7 @@ const cloudGame = new CloudGame;
 
 cloudGame.start();
 
-letMeKnow();
+//letMeKnow();
 
 
 

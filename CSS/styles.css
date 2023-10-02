@@ -85,7 +85,8 @@ h2 {
     font-weight: normal;
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-
+    margin-top: 0px;
+    margin-bottom: 0px ;
 }
 
 a {
@@ -622,7 +623,7 @@ align-self: center;
 
 .middle-container {
 
-    height: 100vh;
+    height: 100%;
 }
 
 /****************** Contact Me ****************************/
